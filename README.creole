@@ -1,0 +1,3 @@
+=Project Euler Scala WorkSheets and Programs=
+
+All code licenced under LGPL v3 or later
