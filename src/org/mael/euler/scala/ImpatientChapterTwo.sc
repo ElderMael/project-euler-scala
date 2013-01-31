@@ -82,21 +82,9 @@ object ImpatientChapterTwo {
                                                   //| 108
                                                   //| 111
 
-  def power(x: Int, n: Int): Int = {
-    printf("x : %d, n : %d\n", x, n);
-    if (n == 0) 1
-    else if (n < 0) {
-      1 / (power(x, -n))
-    } else if (n % 2 == 0) {
+  def power(x: Double, n: Int): Double = {
+    scala.math.pow(x,n)
+  }                                               //> power: (x: Double, n: Int)Double
 
-      val y = power(x, (n / 2))
-      power(y.toInt, 2)
-    } else {
-      x * power(x, n - 1)
-    }
-  }                                               //> power: (x: Int, n: Int)Int
-
-  power(1, 0)                                     //> x : 1, n : 0
-                                                  //| res0: Int = 1
-
+	power(3,3)                                //> res0: Double = 27.0
 }
